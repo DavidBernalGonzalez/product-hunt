@@ -1,3 +1,120 @@
+@charset "UTF-8";
+/******************************************
+*************** VARIABLES *****************
+******************************************/
+/******************************************
+****** MOBILE VIEW (max-width: 768px) ***** → (Min 280px) XS
+******************************************/
+/******************************************
+****** MOBILE VIEW (max-width: 768px) ***** → (Min 280px) XS
+******************************************/
 body {
-  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  background-color: azure;
 }
+
+body main {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 0.5fr 0.5fr (2)[3fr];
+      grid-template-rows: 0.5fr 0.5fr repeat(3fr, 2);
+}
+
+body main header {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+  background-color: white;
+  border-bottom: 0.25px silver solid;
+}
+
+body main header #logoImg {
+  width: 25px;
+  height: 25px;
+}
+
+body main header #searchImg {
+  width: 20px;
+  height: 20px;
+  margin-top: 2.5px;
+}
+
+body main header input {
+  border: 0px;
+  padding-top: -25px;
+  width: 68%;
+}
+
+body main header input:hover {
+  outline: none;
+}
+
+body main header a {
+  text-decoration: none;
+  color: darkgray;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+body main nav {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  font-size: 9px;
+  padding: 15px 2px;
+}
+
+body main nav a {
+  margin-left: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+body main nav .arrow {
+  width: 10px;
+  height: 10px;
+}
+
+body main section {
+  width: 100%;
+  background-color: white;
+}
+
+body main section h2 {
+  margin: 20px 10px 10px 10px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+/********************************************************
+* SMALL SCREEN (max-width: 961px) and (min-width: 767px)*   →  (Ipad)
+********************************************************/
+/***********************************************************
+* Medium Screen (max-width: 1024px) and (min-width: 960px) *
+************************************************************/
+/***********************************************************
+************* Large Screen (width > 1200px) ****************
+************************************************************/
+/*# sourceMappingURL=style.css.map */

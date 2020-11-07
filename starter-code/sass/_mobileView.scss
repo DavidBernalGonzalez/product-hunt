@@ -1,0 +1,85 @@
+/******************************************
+****** MOBILE VIEW (max-width: 768px) ***** → (Min 280px) XS
+******************************************/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+
+    main{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr repeat(3fr, 2);
+
+        header{
+            grid-row: 1;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+            background-color: $color-white;
+            border-bottom: 0.25px silver solid;
+
+            #logoImg{
+                width: 25px;
+                height: 25px;
+            }
+
+            #searchImg{
+                width: 20px;
+                height: 20px;
+                margin-top: 2.5px;
+            }
+
+            input{
+                border: 0px;
+                padding-top: -25px;
+                width: 68%;
+                &:hover{
+                    outline: none;
+                }
+            }
+
+            a{
+                text-decoration: none;
+                color: darkgray;
+                margin-top: 5px;
+                font-size: 15px;
+            }
+        }
+
+        nav{
+            grid-row: 2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            display: flex;
+            justify-content: space-between;
+            background-color: $color-white;
+            font-size: 9px;
+            padding: 15px 2px;
+
+            a{
+                margin-left: 5px;
+                text-decoration: none;
+                color: black;
+            }
+
+            .arrow{
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+        section{
+            width: 100%;
+            background-color: white;
+            h2{
+                margin: 20px 10px 10px 10px;
+                font-size: 20px;
+                font-weight: 100;
+            }
+        }
+    }
+}
