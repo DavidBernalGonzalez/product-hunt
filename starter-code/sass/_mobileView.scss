@@ -82,7 +82,6 @@ body{
                 justify-content: space-between;
                 align-items: center;
                 margin: 10px;
-                border-bottom: 1px solid silver;
                 width: 100%;
                 margin: 0;
 
@@ -99,13 +98,23 @@ body{
                     height: 15px;
                     padding-right: 15px;
                 }
+
+                span{
+                    font-weight: bold;
+                    margin-right: 0.5rem;
+
+                    &:last-child{
+                        margin: 0 0.5rem;
+                        font-weight: 100;
+                    }
+                }
             }
             
             article{
                 display: flex;
                 flex-direction: row;
-                padding: 7.5px 7.5px;
-                border-bottom: 1px solid silver;
+                padding: 15.5px 7.5px;
+                border-top: 1px solid silver;
                 align-items: center;
 
                 .articleImg{
@@ -118,6 +127,7 @@ body{
                 h3{
                     margin-top: 0px;
                     margin-bottom: 0px;
+                    font-weight: 100;
                 }
 
                 p{
@@ -139,22 +149,66 @@ body{
                             display: inline-block;
                             border-radius: 3px;
                             border: 1px solid black;
-                            margin: 0px 10px 0px 0px;
-                            padding: 2px;
+                            margin: 2px 10px 2px 2px;
+                            padding: 3px;
                             font-size: 11px;
+                            justify-content: center;
+                            //width: 50px;
+                            text-align-last: center;
+
                             img{
                                 width: 10px;
                                 height: 10px;
                                 margin-right: 3.5px;
+                                margin-top: 1px;
                             }
+
+                            &:last-child{
+                                width: 20px;
+                            }
+                            
+                            #maximizeImg{
+                                margin-right: 0px;
+                                margin-top: 1px;
+                            }
+
                         }
 
                     }
                 }
+
             }
             
             #showMore{
                 text-align: center;
+                padding-top: 15px;
+
+                span{
+                    font-weight: bold;
+                    font-size: 15px;
+                    img{
+                        padding-right: 7.5px;
+                        height: 12px;
+                        width: 12px;
+                    }
+                    
+                }
+            }
+
+            &:last-child{
+                padding-bottom: 15px;
+            }
+
+            #chat{
+                display: flex;
+                align-items: center;
+                font-size: 10px;
+                img{
+                    width: 32.5px;
+                    height: 32.5px;
+                    border-radius: 50%;
+                    margin: 5px;
+                }
             }
         }
     }

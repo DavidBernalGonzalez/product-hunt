@@ -114,7 +114,6 @@ body main section .startSection {
       -ms-flex-align: center;
           align-items: center;
   margin: 10px;
-  border-bottom: 1px solid silver;
   width: 100%;
   margin: 0;
 }
@@ -133,6 +132,16 @@ body main section .startSection #close {
   padding-right: 15px;
 }
 
+body main section .startSection span {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+body main section .startSection span:last-child {
+  margin: 0 0.5rem;
+  font-weight: 100;
+}
+
 body main section article {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -141,8 +150,8 @@ body main section article {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 7.5px 7.5px;
-  border-bottom: 1px solid silver;
+  padding: 15.5px 7.5px;
+  border-top: 1px solid silver;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -158,6 +167,7 @@ body main section article .articleImg {
 body main section article h3 {
   margin-top: 0px;
   margin-bottom: 0px;
+  font-weight: 100;
 }
 
 body main section article p {
@@ -182,19 +192,66 @@ body main section article .articleDiv #wrapperIcons div {
   display: inline-block;
   border-radius: 3px;
   border: 1px solid black;
-  margin: 0px 10px 0px 0px;
-  padding: 2px;
+  margin: 2px 10px 2px 2px;
+  padding: 3px;
   font-size: 11px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align-last: center;
 }
 
 body main section article .articleDiv #wrapperIcons div img {
   width: 10px;
   height: 10px;
   margin-right: 3.5px;
+  margin-top: 1px;
+}
+
+body main section article .articleDiv #wrapperIcons div:last-child {
+  width: 20px;
+}
+
+body main section article .articleDiv #wrapperIcons div #maximizeImg {
+  margin-right: 0px;
+  margin-top: 1px;
 }
 
 body main section #showMore {
   text-align: center;
+  padding-top: 15px;
+}
+
+body main section #showMore span {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+body main section #showMore span img {
+  padding-right: 7.5px;
+  height: 12px;
+  width: 12px;
+}
+
+body main section:last-child {
+  padding-bottom: 15px;
+}
+
+body main section #chat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 10px;
+}
+
+body main section #chat img {
+  width: 32.5px;
+  height: 32.5px;
+  border-radius: 50%;
+  margin: 5px;
 }
 
 /********************************************************
