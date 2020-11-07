@@ -84,6 +84,7 @@ body main nav {
   background-color: white;
   font-size: 9px;
   padding: 15px 2px;
+  border-bottom: 1px solid silver;
 }
 
 body main nav a {
@@ -102,10 +103,98 @@ body main section {
   background-color: white;
 }
 
-body main section h2 {
-  margin: 20px 10px 10px 10px;
+body main section .startSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  border-bottom: 1px solid silver;
+  width: 100%;
+  margin: 0;
+}
+
+body main section .startSection h2 {
+  display: inline;
+  width: 100%;
   font-size: 20px;
   font-weight: 100;
+  margin-left: 15px;
+}
+
+body main section .startSection #close {
+  width: 15px;
+  height: 15px;
+  padding-right: 15px;
+}
+
+body main section article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 7.5px 7.5px;
+  border-bottom: 1px solid silver;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main section article .articleImg {
+  margin-left: 15px;
+  margin-right: 10px;
+  width: 80px;
+  height: 80px;
+}
+
+body main section article h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+body main section article p {
+  margin: 0px 0px 2.5px 0px;
+  font-size: 12.5px;
+  color: gray;
+}
+
+body main section article .articleDiv {
+  margin: 0;
+  padding: 0;
+}
+
+body main section article .articleDiv #wrapperIcons {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main section article .articleDiv #wrapperIcons div {
+  display: inline-block;
+  border-radius: 3px;
+  border: 1px solid black;
+  margin: 0px 10px 0px 0px;
+  padding: 2px;
+  font-size: 11px;
+}
+
+body main section article .articleDiv #wrapperIcons div img {
+  width: 10px;
+  height: 10px;
+  margin-right: 3.5px;
+}
+
+body main section #showMore {
+  text-align: center;
 }
 
 /********************************************************

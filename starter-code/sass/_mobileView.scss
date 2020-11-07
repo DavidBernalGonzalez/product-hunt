@@ -19,7 +19,7 @@ body{
             display: flex;
             justify-content: space-between;
             padding: 5px;
-            background-color: $color-white;
+            background-color: white;
             border-bottom: 0.25px silver solid;
 
             #logoImg{
@@ -56,9 +56,10 @@ body{
             grid-column-end: 2;
             display: flex;
             justify-content: space-between;
-            background-color: $color-white;
+            background-color: white;
             font-size: 9px;
             padding: 15px 2px;
+            border-bottom: 1px solid silver;
 
             a{
                 margin-left: 5px;
@@ -71,14 +72,89 @@ body{
                 height: 10px;
             }
         }
-
+        
         section{
             width: 100%;
             background-color: white;
-            h2{
-                margin: 20px 10px 10px 10px;
-                font-size: 20px;
-                font-weight: 100;
+
+            .startSection{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 10px;
+                border-bottom: 1px solid silver;
+                width: 100%;
+                margin: 0;
+
+                h2{
+                    display: inline;
+                    width: 100%;
+                    font-size: 20px;
+                    font-weight: 100;
+                    margin-left: 15px;
+                }
+
+                #close{
+                    width: 15px;
+                    height: 15px;
+                    padding-right: 15px;
+                }
+            }
+            
+            article{
+                display: flex;
+                flex-direction: row;
+                padding: 7.5px 7.5px;
+                border-bottom: 1px solid silver;
+                align-items: center;
+
+                .articleImg{
+                    margin-left: 15px;
+                    margin-right: 10px;
+                    width: 80px;
+                    height: 80px;
+                }
+
+                h3{
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                }
+
+                p{
+                    margin: 0px 0px 2.5px 0px;
+                    font-size: 12.5px;
+                    color: gray
+                }
+
+                .articleDiv{
+                    //flex-direction: row;
+                    margin: 0;
+                    padding: 0;
+
+                    #wrapperIcons{
+                        flex-direction: column;
+
+                        div{
+                            //flex-direction: row;
+                            display: inline-block;
+                            border-radius: 3px;
+                            border: 1px solid black;
+                            margin: 0px 10px 0px 0px;
+                            padding: 2px;
+                            font-size: 11px;
+                            img{
+                                width: 10px;
+                                height: 10px;
+                                margin-right: 3.5px;
+                            }
+                        }
+
+                    }
+                }
+            }
+            
+            #showMore{
+                text-align: center;
             }
         }
     }
