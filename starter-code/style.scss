@@ -13,9 +13,7 @@
 
 @media screen and (max-width: 1200px)  and (min-width: 962px){
     @import "stylesSass/smallScreen";
-    body {
-        background-color: blue;
-    }
+    //--------------------------------------------------------
     @import "stylesSass/mediumScreen";
 }
 

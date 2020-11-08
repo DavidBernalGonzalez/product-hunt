@@ -512,17 +512,15 @@ body main section #chat img {
   body main section #showMore {
     padding: 10px 0;
   }
-  body {
-    background-color: blue;
-  }
   /******************************************
-****** SMALL SCREEN (max-width: 768px) **** → DE 452px A 
+****** MEDIUM SCREEN (max-width: 768px) **** → DE 452px A
 ******************************************/
   body main #welcome p {
     width: 50%;
     float: left;
     text-align: right;
     padding-right: 20px;
+    margin-top: 15px;
   }
   body main #welcome img {
     width: 15px;
@@ -549,6 +547,7 @@ body main section #chat img {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 10px;
+    margin-top: -12px;
   }
   body main #welcome div button {
     background: none;
@@ -562,6 +561,11 @@ body main section #chat img {
     font-weight: 8px;
     border-radius: 3px;
     margin-right: 10px;
+  }
+  body main section #chat {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
