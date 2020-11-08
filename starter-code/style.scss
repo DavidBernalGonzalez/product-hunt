@@ -10,11 +10,25 @@
 @media screen and (max-width: 961px) and (min-width: 452px){
     @import "stylesSass/smallScreen";
 }
-
+/********************************************************
+*********** SMALL SCREEN DE 962PX A 1200PX **************
+********************************************************/
 @media screen and (max-width: 1200px)  and (min-width: 962px){
     @import "stylesSass/smallScreen";
     //--------------------------------------------------------
     @import "stylesSass/mediumScreen";
+}
+/********************************************************
+*************** SMALL SCREEN DE 1200PX ******************
+********************************************************/
+@media screen and (min-width: 1201px){
+    @import "stylesSass/smallScreen";
+    //--------------------------------------------------------
+    @import "stylesSass/mediumScreen";
+    //--------------------------------------------------------
+    body{
+        background-color: red;
+    }
 }
 
 
