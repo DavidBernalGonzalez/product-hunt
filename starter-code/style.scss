@@ -1,24 +1,71 @@
-/******************************************
-*************** VARIABLES *****************
-******************************************/
-$color-white: white;
-$color-gray: gray;
 
 /******************************************
 ****** MOBILE VIEW (max-width: 768px) ***** → (Min 280px) XS
 ******************************************/
-@import "sass/mobileView";
+@import "stylesSass/mobileView";
 
 /********************************************************
 * SMALL SCREEN (max-width: 961px) and (min-width: 767px)*   →  (Ipad)
 ********************************************************/
-//@import "stylesItems/smallScreen";
+@media screen and (max-width: 961px) and (min-width: 452px){
+    body {
+        background-color: red;
+    }
+    @import "stylesSass/smallScreen";
+}
+
+@media screen and (max-width: 992px) and (min-width: 601px){
+    body {
+        background-color: blue;
+    }
+}
+
+
+
+
+
+
+
+
+/*@media screen and (max-width: 450px){
+    @import "stylesSass/mobileView";
+}*/
+
+
+//@import "stylesSass/smallScreen";
+/*
+@media screen and (max-width: 850px) and (min-width: 451px){ //and (min-width: 500px){
+    html{
+        width: 40px;
+        margin: 0px;
+        background-color: red;
+    }
+
+    main{
+        width: 250px;
+
+        section{
+            background-color: red;
+            width: 250px;
+            height: 250px;
+            margin-left: 5%;
+            margin-right: 10%;
+            margin-top: 7.5%;
+        
+            article{
+                width: 450px;
+                background-color: yellow;
+            }
+        }
+    }
+
+}    */
 
 /***********************************************************
 * Medium Screen (max-width: 1024px) and (min-width: 960px) *
 ************************************************************/
-//@import "stylesItems/mediumScreen";
+//@import "stylesSass/mediumScreen";
 /***********************************************************
 ************* Large Screen (width > 1200px) ****************
 ************************************************************/
-//@import "stylesItems/largeView";
+//@import "stylesSass/largeView";

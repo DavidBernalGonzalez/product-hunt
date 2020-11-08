@@ -1,0 +1,36 @@
+/******************************************
+****** MOBILE VIEW (max-width: 768px) ***** → (Min 280px) XS
+******************************************/
+body{
+   main{
+       header{
+
+       }
+
+       nav{
+
+       }
+
+       #welcome{
+        display: flex;
+
+            p{
+                span{
+                    font-weight: bold;
+                }
+            }
+
+            img {
+                width: 15px;
+                height: 15px;
+                padding-right: 15px;
+            }
+       }
+
+       section{
+           article{
+
+           }
+       }
+   }
+}

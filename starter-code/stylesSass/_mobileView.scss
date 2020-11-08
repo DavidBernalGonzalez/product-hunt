@@ -4,7 +4,9 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: azure;
+    background-color: white;
+
+    min-width: 300px;
 
     main{
         width: 100%;
@@ -72,7 +74,10 @@ body{
                 height: 10px;
             }
         }
-        
+        #welcome{
+            display: none;
+        }
+
         section{
             width: 100%;
             background-color: white;
@@ -137,23 +142,34 @@ body{
                 }
 
                 .articleDiv{
-                    //flex-direction: row;
                     margin: 0;
                     padding: 0;
+                    width: 100%;
 
                     #wrapperIcons{
-                        flex-direction: column;
+                        display: flex;
+                        flex-direction: row;
 
+                        #wrapperIconsRight{
+                            display: none;
+                            div{
+                                border: 1px solid black;
+                            }
+                        }
+
+                        #wrapperIconsLeft{
+                            div{
+                                border: 1px solid black;
+                            }
+                        }
                         div{
-                            //flex-direction: row;
-                            display: inline-block;
+                            display: flex;
+                            flex-direction: row;
                             border-radius: 3px;
-                            border: 1px solid black;
                             margin: 2px 10px 2px 2px;
                             padding: 3px;
                             font-size: 11px;
                             justify-content: center;
-                            //width: 50px;
                             text-align-last: center;
 
                             img{
@@ -166,7 +182,7 @@ body{
                             &:last-child{
                                 width: 20px;
                             }
-                            
+
                             #maximizeImg{
                                 margin-right: 0px;
                                 margin-top: 1px;
@@ -174,6 +190,9 @@ body{
 
                         }
 
+                        #inTech{
+                            display: none;
+                        }
                     }
                 }
 
