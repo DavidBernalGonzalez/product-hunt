@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /******************************************
-****** MOBILE VIEW (max-width: 768px) ***** → (Min 280px) XS
+******** MOBILE VIEW (Min 280px) XS *******
 ******************************************/
 /******************************************
 ****** MOBILE VIEW (max-width: 768px) ***** → (Min 280px) XS
@@ -280,14 +280,11 @@ body main section #chat img {
 }
 
 /********************************************************
-* SMALL SCREEN (max-width: 961px) and (min-width: 767px)*   →  (Ipad)
+*********** SMALL SCREEN DE 452PX A 961 PX **************
 ********************************************************/
 @media screen and (max-width: 961px) and (min-width: 452px) {
-  body {
-    background-color: red;
-  }
   /******************************************
-****** MOBILE VIEW (max-width: 768px) ***** → (Min 280px) XS
+****** SMALL SCREEN (max-width: 768px) **** → DE 452px A 
 ******************************************/
   body {
     background-color: #F9F9F9;
@@ -308,14 +305,23 @@ body main section #chat img {
             align-items: center;
   }
   body main #welcome {
-    display: -ms-grid;
-    display: grid;
+    display: inline-block;
     -ms-flex-line-pack: center;
         align-content: center;
     width: 90%;
     background-color: white;
     margin: 15px 0;
     border: solid 1px #F9F9F9;
+  }
+  body main #welcome p {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 85%;
+    float: left;
+    margin-left: 10px;
+    font-size: 12px;
+    text-align: center;
   }
   body main #welcome p span {
     font-weight: bold;
@@ -324,6 +330,37 @@ body main section #chat img {
     width: 15px;
     height: 15px;
     padding-right: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: right;
+  }
+  body main #welcome div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    clear: both;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+            align-items: inherit;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+  }
+  body main #welcome div button {
+    background: none;
+    margin-left: 5px;
+    font: inherit;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    background-color: #DA552F;
+    color: white;
+    font-weight: 8px;
+    border-radius: 3px;
   }
   body main section {
     width: 90%;
@@ -361,9 +398,170 @@ body main section #chat img {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 601px) {
+@media screen and (max-width: 1200px) and (min-width: 962px) {
+  /******************************************
+****** SMALL SCREEN (max-width: 768px) **** → DE 452px A 
+******************************************/
+  body {
+    background-color: #F9F9F9;
+  }
+  body main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main #welcome {
+    display: inline-block;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 90%;
+    background-color: white;
+    margin: 15px 0;
+    border: solid 1px #F9F9F9;
+  }
+  body main #welcome p {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 85%;
+    float: left;
+    margin-left: 10px;
+    font-size: 12px;
+    text-align: center;
+  }
+  body main #welcome p span {
+    font-weight: bold;
+  }
+  body main #welcome img {
+    width: 15px;
+    height: 15px;
+    padding-right: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: right;
+  }
+  body main #welcome div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    clear: both;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+            align-items: inherit;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+  }
+  body main #welcome div button {
+    background: none;
+    margin-left: 5px;
+    font: inherit;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    background-color: #DA552F;
+    color: white;
+    font-weight: 8px;
+    border-radius: 3px;
+  }
+  body main section {
+    width: 90%;
+    margin: 15px 0;
+  }
+  body main section article .articleDiv #wrapperIcons {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body main section article .articleDiv #wrapperIcons #wrapperIconsLeft #inTech {
+    display: inline;
+    border: none;
+  }
+  body main section article .articleDiv #wrapperIcons #wrapperIconsLeft .onlyMobile {
+    display: none;
+  }
+  body main section article .articleDiv #wrapperIcons #wrapperIconsRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 20%;
+  }
+  body main section article .articleDiv #wrapperIcons #wrapperIconsRight div {
+    border: 1px solid black;
+    padding: 0 20px;
+    background-color: #EFEFEF;
+    margin-right: 4.5px;
+  }
+  body main section #showMore {
+    padding: 10px 0;
+  }
   body {
     background-color: blue;
+  }
+  /******************************************
+****** SMALL SCREEN (max-width: 768px) **** → DE 452px A 
+******************************************/
+  body main #welcome p {
+    width: 50%;
+    float: left;
+    text-align: right;
+    padding-right: 20px;
+  }
+  body main #welcome img {
+    width: 15px;
+    height: 15px;
+    padding-right: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: right;
+  }
+  body main #welcome div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: left;
+    clear: right;
+    width: 40%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+            align-items: inherit;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+  }
+  body main #welcome div button {
+    background: none;
+    margin-left: 5px;
+    font: inherit;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    background-color: #DA552F;
+    color: white;
+    font-weight: 8px;
+    border-radius: 3px;
+    margin-right: 10px;
   }
 }
 

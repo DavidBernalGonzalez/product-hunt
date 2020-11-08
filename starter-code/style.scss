@@ -1,23 +1,22 @@
 
 /******************************************
-****** MOBILE VIEW (max-width: 768px) ***** → (Min 280px) XS
+******** MOBILE VIEW (Min 280px) XS *******
 ******************************************/
 @import "stylesSass/mobileView";
 
 /********************************************************
-* SMALL SCREEN (max-width: 961px) and (min-width: 767px)*   →  (Ipad)
+*********** SMALL SCREEN DE 452PX A 961 PX **************
 ********************************************************/
 @media screen and (max-width: 961px) and (min-width: 452px){
-    body {
-        background-color: red;
-    }
     @import "stylesSass/smallScreen";
 }
 
-@media screen and (max-width: 992px) and (min-width: 601px){
+@media screen and (max-width: 1200px)  and (min-width: 962px){
+    @import "stylesSass/smallScreen";
     body {
         background-color: blue;
     }
+    @import "stylesSass/mediumScreen";
 }
 
 
