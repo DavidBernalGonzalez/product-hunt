@@ -1,9 +1,8 @@
-@charset "UTF-8";
 /******************************************
-******** MOBILE VIEW (Min 280px) XS *******
+* MOBILE VIEW (Min 280px hasta 541px) XS **
 ******************************************/
 /******************************************
-****** MOBILE VIEW (max-width: 768px) ***** → (Min 280px) XS
+* MOBILE VIEW (Min 280px hasta 541px) XS **
 ******************************************/
 body {
   margin: 0;
@@ -279,13 +278,17 @@ body main section #chat img {
   margin: 5px;
 }
 
+body main .asides {
+  display: none;
+}
+
 /********************************************************
 *********** SMALL SCREEN DE 452PX A 961 PX **************
 ********************************************************/
 @media screen and (max-width: 961px) and (min-width: 452px) {
-  /******************************************
-****** SMALL SCREEN (max-width: 768px) **** → DE 452px A 
-******************************************/
+  /********************************************************
+*********** SMALL SCREEN DE 452PX A 961 PX **************
+********************************************************/
   body {
     background-color: #F9F9F9;
   }
@@ -399,12 +402,12 @@ body main section #chat img {
 }
 
 /********************************************************
-*********** SMALL SCREEN DE 962PX A 1200PX **************
+*********** MEDIUM SCREEN DE 962PX A 1200PX **************
 ********************************************************/
 @media screen and (max-width: 1200px) and (min-width: 962px) {
-  /******************************************
-****** SMALL SCREEN (max-width: 768px) **** → DE 452px A 
-******************************************/
+  /********************************************************
+*********** SMALL SCREEN DE 452PX A 961 PX **************
+********************************************************/
   body {
     background-color: #F9F9F9;
   }
@@ -515,9 +518,9 @@ body main section #chat img {
   body main section #showMore {
     padding: 10px 0;
   }
-  /******************************************
-****** MEDIUM SCREEN (max-width: 768px) **** → DE 452px A
-******************************************/
+  /********************************************************
+*********** SMALL SCREEN DE 962PX A 1200PX **************
+********************************************************/
   body main #welcome p {
     width: 50%;
     float: left;
@@ -573,12 +576,12 @@ body main section #chat img {
 }
 
 /********************************************************
-*************** SMALL SCREEN DE 1200PX ******************
+***************** LARGE SCREEN +1201PX ******************
 ********************************************************/
 @media screen and (min-width: 1201px) {
-  /******************************************
-****** SMALL SCREEN (max-width: 768px) **** → DE 452px A 
-******************************************/
+  /********************************************************
+*********** SMALL SCREEN DE 452PX A 961 PX **************
+********************************************************/
   body {
     background-color: #F9F9F9;
   }
@@ -689,9 +692,9 @@ body main section #chat img {
   body main section #showMore {
     padding: 10px 0;
   }
-  /******************************************
-****** MEDIUM SCREEN (max-width: 768px) **** → DE 452px A
-******************************************/
+  /********************************************************
+*********** SMALL SCREEN DE 962PX A 1200PX **************
+********************************************************/
   body main #welcome p {
     width: 50%;
     float: left;
@@ -744,45 +747,117 @@ body main section #chat img {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  /********************************************************
+***************** LARGE SCREEN +1201PX ******************
+********************************************************/
   body {
-    background-color: red;
+    background-color: tomato;
+  }
+  body main {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2.5% 3fr 1fr 2.5%;
+        grid-template-columns: 2.5% 3fr 1fr 2.5%;
+    -ms-grid-rows: 1fr, 1fr, 1fr, 5fr, 5fr;
+        grid-template-rows: 1fr, 1fr, 1fr, 5fr, 5fr;
+  }
+  body main header {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 6;
+  }
+  body main nav {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 6;
+  }
+  body main #welcome {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 4;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main #welcome p {
+    font-size: 20px;
+  }
+  body main #section1 {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  body main #section2 {
+    -ms-grid-row: 5;
+    grid-row: 5;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  body main .asides {
+    display: inline-block;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 6;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  body main .asides #aside1 {
+    background-color: white;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2.5% 2.5% 7.5% 7.5%;
+  }
+  body main .asides #aside1 div h2 {
+    display: inline;
+    font-size: 20px;
+    font-weight: 100;
+    float: left;
+  }
+  body main .asides #aside1 div img {
+    width: 15px;
+    height: 15px;
+    padding-right: 15px;
+    float: right;
+    padding-top: 15px;
+  }
+  body main .asides #aside1 p {
+    clear: both;
+    margin-top: 0px;
+  }
+  body main .asides #aside1 button {
+    margin-left: 5px;
+    font: inherit;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    background-color: #DA552F;
+    color: white;
+    font-weight: 8px;
+    border-radius: 3px;
+    margin-right: 10px;
+    width: 80%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
-
-/*@media screen and (max-width: 450px){
-    @import "stylesSass/mobileView";
-}*/
-/*
-@media screen and (max-width: 850px) and (min-width: 451px){ //and (min-width: 500px){
-    html{
-        width: 40px;
-        margin: 0px;
-        background-color: red;
-    }
-
-    main{
-        width: 250px;
-
-        section{
-            background-color: red;
-            width: 250px;
-            height: 250px;
-            margin-left: 5%;
-            margin-right: 10%;
-            margin-top: 7.5%;
-        
-            article{
-                width: 450px;
-                background-color: yellow;
-            }
-        }
-    }
-
-}    */
-/***********************************************************
-* Medium Screen (max-width: 1024px) and (min-width: 960px) *
-************************************************************/
-/***********************************************************
-************* Large Screen (width > 1200px) ****************
-************************************************************/
 /*# sourceMappingURL=style.css.map */

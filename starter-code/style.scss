@@ -1,7 +1,7 @@
 /******************************************
 * MOBILE VIEW (Min 280px hasta 541px) XS **
 ******************************************/
-@import "stylesSass/mobileView";
+@import "stylesSass/mobileScreen";
 
 /********************************************************
 *********** SMALL SCREEN DE 452PX A 961 PX **************
@@ -10,7 +10,7 @@
     @import "stylesSass/smallScreen";
 }
 /********************************************************
-*********** SMALL SCREEN DE 962PX A 1200PX **************
+*********** MEDIUM SCREEN DE 962PX A 1200PX **************
 ********************************************************/
 @media screen and (max-width: 1200px)  and (min-width: 962px){
     @import "stylesSass/smallScreen";
@@ -18,14 +18,12 @@
     @import "stylesSass/mediumScreen";
 }
 /********************************************************
-*************** SMALL SCREEN DE 1200PX ******************
+***************** LARGE SCREEN +1201PX ******************
 ********************************************************/
 @media screen and (min-width: 1201px){
     @import "stylesSass/smallScreen";
     //--------------------------------------------------------
     @import "stylesSass/mediumScreen";
     //--------------------------------------------------------
-    body{
-        background-color: red;
-    }
+    @import "stylesSass/largeScreen";
 }

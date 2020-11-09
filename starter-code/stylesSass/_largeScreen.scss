@@ -1,0 +1,98 @@
+/********************************************************
+***************** LARGE SCREEN +1201PX ******************
+********************************************************/
+body{
+    background-color: tomato;
+    main{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2.5% 3fr 1fr 2.5%;
+        grid-template-rows: 1fr, 1fr, 1fr, 5fr, 5fr;
+
+        header{
+            grid-row: 1;
+            grid-column-start: 1;
+            grid-column-end: 6;
+        }
+    
+        nav{
+            grid-row: 2;
+            grid-column-start: 1;
+            grid-column-end: 6;
+        }
+
+        #welcome{
+            grid-row: 3;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            width: 100%;
+            align-items: center;
+            p{
+                font-size: 20px;
+            }
+        }
+    
+        #section1{
+            grid-row: 4;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        #section2{
+            grid-row: 5;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+
+        .asides{
+            display: inline-block;
+            grid-row-start: 4;
+            grid-row-end: 6;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            #aside1{
+                background-color: white;
+                padding-bottom: 15px;
+                margin-bottom: 15px;
+                display: flex;
+                flex-direction: column;
+                padding: 2.5% 2.5% 7.5% 7.5%;
+                div{
+                    h2{
+                        display: inline;
+                        font-size: 20px;
+                        font-weight: 100;
+                        float:left;
+                    }
+                    img{
+                        width: 15px;
+                        height: 15px;
+                        padding-right: 15px;
+                        float:right;
+                        padding-top: 15px;
+                    }
+                }
+
+                p{
+                    clear: both;
+                    margin-top: 0px;
+                }
+
+                button{
+                    margin-left: 5px;
+                    font: inherit;
+                    border: none;
+                    cursor: pointer;
+                    outline: inherit;
+                    background-color: #DA552F;
+                    color: white;
+                    font-weight: 8px;
+                    border-radius: 3px;
+                    margin-right: 10px;
+                    width: 80%;
+                    align-self: center;
+                }
+            }
+        }
+    }
+}
