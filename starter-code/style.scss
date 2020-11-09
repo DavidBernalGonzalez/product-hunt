@@ -1,6 +1,5 @@
-
 /******************************************
-******** MOBILE VIEW (Min 280px) XS *******
+* MOBILE VIEW (Min 280px hasta 541px) XS **
 ******************************************/
 @import "stylesSass/mobileView";
 
@@ -30,53 +29,3 @@
         background-color: red;
     }
 }
-
-
-
-
-
-
-
-
-/*@media screen and (max-width: 450px){
-    @import "stylesSass/mobileView";
-}*/
-
-
-//@import "stylesSass/smallScreen";
-/*
-@media screen and (max-width: 850px) and (min-width: 451px){ //and (min-width: 500px){
-    html{
-        width: 40px;
-        margin: 0px;
-        background-color: red;
-    }
-
-    main{
-        width: 250px;
-
-        section{
-            background-color: red;
-            width: 250px;
-            height: 250px;
-            margin-left: 5%;
-            margin-right: 10%;
-            margin-top: 7.5%;
-        
-            article{
-                width: 450px;
-                background-color: yellow;
-            }
-        }
-    }
-
-}    */
-
-/***********************************************************
-* Medium Screen (max-width: 1024px) and (min-width: 960px) *
-************************************************************/
-//@import "stylesSass/mediumScreen";
-/***********************************************************
-************* Large Screen (width > 1200px) ****************
-************************************************************/
-//@import "stylesSass/largeView";
