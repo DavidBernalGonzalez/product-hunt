@@ -1,0 +1,101 @@
+/********************************************************
+*********** SMALL SCREEN DE 452PX A 961 PX **************
+********************************************************/
+body{
+    background-color: #F9F9F9;
+   main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+       #welcome{
+        display: inline-block;
+        align-content: center;
+        width: 90%;
+        background-color: white;
+        margin: 15px 0;
+        border: solid 1px #F9F9F9;
+
+
+            p{
+                align-items: center;
+                width: 85%;
+                float: left;
+                margin-left: 10px;
+                font-size: 12px;
+                text-align: center;
+                span{
+                    font-weight: bold;
+                }
+            }
+
+            img {
+                width: 15px;
+                height: 15px;
+                padding-right: 15px;
+                margin-left: 10px;
+                margin-top: 10px;
+                float: right;
+            }
+
+            div{
+                display: flex;
+                clear: both;
+                align-items: center;
+                align-items: inherit;
+                justify-content: center;
+                margin-bottom: 10px;
+
+                button{
+                    background: none;
+                    margin-left: 5px;
+                    font: inherit;
+                    border: none;
+                    cursor: pointer;
+                    outline: inherit;
+                    background-color: #DA552F;
+                    color: white;
+                    font-weight: 8px;
+                    border-radius: 3px;
+                }
+            }
+       }
+
+       section{
+           width: 90%;
+           margin: 15px 0;
+           article{
+                .articleDiv{
+                    #wrapperIcons{
+                        justify-content: space-between;
+                        #wrapperIconsLeft{
+                            #inTech{
+                                display: inline;
+                                border: none;
+                            }
+
+                            .onlyMobile{
+                                display: none;
+                            }
+                        }
+                        #wrapperIconsRight{
+                            display: flex;
+                            align-items: center;
+                            width: 20%;
+                            div{
+                                border: 1px solid black;
+                                padding: 0 20px;
+                                background-color: #EFEFEF;
+                                margin-right: 4.5px;
+                            }
+                        }
+                    }
+                }
+            }
+            #showMore{
+                padding: 10px 0;
+            }
+        }
+    }
+}

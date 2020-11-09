@@ -1,0 +1,927 @@
+/******************************************
+* MOBILE VIEW (Min 280px hasta 541px) XS **
+******************************************/
+/******************************************
+* MOBILE VIEW (Min 280px hasta 541px) XS **
+******************************************/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  min-width: 300px;
+}
+
+body main {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 0.5fr 0.5fr (2)[3fr];
+      grid-template-rows: 0.5fr 0.5fr repeat(3fr, 2);
+}
+
+body main header {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  border-bottom: 0.25px silver solid;
+  width: 100%;
+}
+
+body main header #logoImg {
+  width: 25px;
+  height: 25px;
+}
+
+body main header #searchImg {
+  width: 20px;
+  height: 20px;
+  margin-top: 2.5px;
+}
+
+body main header input {
+  border: 0px;
+  padding-top: -25px;
+  width: 68%;
+}
+
+body main header input:hover {
+  outline: none;
+}
+
+body main header a {
+  text-decoration: none;
+  color: darkgray;
+  margin-top: 5px;
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+body main nav {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  font-size: 9px;
+  padding: 15px 0px;
+  border-bottom: 1px solid silver;
+  width: 100%;
+}
+
+body main nav a {
+  margin-left: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+body main nav .arrow {
+  width: 10px;
+  height: 10px;
+}
+
+body main #welcome {
+  display: none;
+}
+
+body main section {
+  width: 100%;
+  background-color: white;
+}
+
+body main section .startSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  width: 100%;
+  margin: 0;
+}
+
+body main section .startSection h2 {
+  display: inline;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 100;
+  margin-left: 15px;
+}
+
+body main section .startSection #close {
+  width: 15px;
+  height: 15px;
+  padding-right: 15px;
+}
+
+body main section .startSection span {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+body main section .startSection span:last-child {
+  margin: 0 0.5rem;
+  font-weight: 100;
+}
+
+body main section article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 15.5px 7.5px;
+  border-top: 1px solid silver;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main section article .articleImg {
+  margin-left: 15px;
+  margin-right: 10px;
+  width: 80px;
+  height: 80px;
+}
+
+body main section article h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 100;
+}
+
+body main section article p {
+  margin: 0px 0px 2.5px 0px;
+  font-size: 12.5px;
+  color: gray;
+}
+
+body main section article .articleDiv {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body main section article .articleDiv #wrapperIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body main section article .articleDiv #wrapperIcons #wrapperIconsRight {
+  display: none;
+}
+
+body main section article .articleDiv #wrapperIcons #wrapperIconsLeft div {
+  border: 1px solid black;
+}
+
+body main section article .articleDiv #wrapperIcons div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 3px;
+  margin: 2px 10px 2px 2px;
+  padding: 3px;
+  font-size: 11px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align-last: center;
+}
+
+body main section article .articleDiv #wrapperIcons div img {
+  width: 10px;
+  height: 10px;
+  margin-right: 3.5px;
+  margin-top: 1px;
+}
+
+body main section article .articleDiv #wrapperIcons div:last-child {
+  width: 20px;
+}
+
+body main section article .articleDiv #wrapperIcons div #maximizeImg {
+  margin-right: 0px;
+  margin-top: 1px;
+}
+
+body main section article .articleDiv #wrapperIcons #inTech {
+  display: none;
+}
+
+body main section #showMore {
+  text-align: center;
+  padding-top: 15px;
+}
+
+body main section #showMore span {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+body main section #showMore span img {
+  padding-right: 7.5px;
+  height: 12px;
+  width: 12px;
+}
+
+body main section:last-child {
+  padding-bottom: 15px;
+}
+
+body main section #chat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 10px;
+}
+
+body main section #chat img {
+  width: 32.5px;
+  height: 32.5px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+body main .asides {
+  display: none;
+}
+
+/********************************************************
+*********** SMALL SCREEN DE 452PX A 961 PX **************
+********************************************************/
+@media screen and (max-width: 961px) and (min-width: 452px) {
+  /********************************************************
+*********** SMALL SCREEN DE 452PX A 961 PX **************
+********************************************************/
+  body {
+    background-color: #F9F9F9;
+  }
+  body main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main #welcome {
+    display: inline-block;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 90%;
+    background-color: white;
+    margin: 15px 0;
+    border: solid 1px #F9F9F9;
+  }
+  body main #welcome p {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 85%;
+    float: left;
+    margin-left: 10px;
+    font-size: 12px;
+    text-align: center;
+  }
+  body main #welcome p span {
+    font-weight: bold;
+  }
+  body main #welcome img {
+    width: 15px;
+    height: 15px;
+    padding-right: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: right;
+  }
+  body main #welcome div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    clear: both;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+            align-items: inherit;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+  }
+  body main #welcome div button {
+    background: none;
+    margin-left: 5px;
+    font: inherit;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    background-color: #DA552F;
+    color: white;
+    font-weight: 8px;
+    border-radius: 3px;
+  }
+  body main section {
+    width: 90%;
+    margin: 15px 0;
+  }
+  body main section article .articleDiv #wrapperIcons {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body main section article .articleDiv #wrapperIcons #wrapperIconsLeft #inTech {
+    display: inline;
+    border: none;
+  }
+  body main section article .articleDiv #wrapperIcons #wrapperIconsLeft .onlyMobile {
+    display: none;
+  }
+  body main section article .articleDiv #wrapperIcons #wrapperIconsRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 20%;
+  }
+  body main section article .articleDiv #wrapperIcons #wrapperIconsRight div {
+    border: 1px solid black;
+    padding: 0 20px;
+    background-color: #EFEFEF;
+    margin-right: 4.5px;
+  }
+  body main section #showMore {
+    padding: 10px 0;
+  }
+}
+
+/********************************************************
+*********** MEDIUM SCREEN DE 962PX A 1200PX **************
+********************************************************/
+@media screen and (max-width: 1200px) and (min-width: 962px) {
+  /********************************************************
+*********** SMALL SCREEN DE 452PX A 961 PX **************
+********************************************************/
+  body {
+    background-color: #F9F9F9;
+  }
+  body main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main #welcome {
+    display: inline-block;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 90%;
+    background-color: white;
+    margin: 15px 0;
+    border: solid 1px #F9F9F9;
+  }
+  body main #welcome p {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 85%;
+    float: left;
+    margin-left: 10px;
+    font-size: 12px;
+    text-align: center;
+  }
+  body main #welcome p span {
+    font-weight: bold;
+  }
+  body main #welcome img {
+    width: 15px;
+    height: 15px;
+    padding-right: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: right;
+  }
+  body main #welcome div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    clear: both;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+            align-items: inherit;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+  }
+  body main #welcome div button {
+    background: none;
+    margin-left: 5px;
+    font: inherit;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    background-color: #DA552F;
+    color: white;
+    font-weight: 8px;
+    border-radius: 3px;
+  }
+  body main section {
+    width: 90%;
+    margin: 15px 0;
+  }
+  body main section article .articleDiv #wrapperIcons {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body main section article .articleDiv #wrapperIcons #wrapperIconsLeft #inTech {
+    display: inline;
+    border: none;
+  }
+  body main section article .articleDiv #wrapperIcons #wrapperIconsLeft .onlyMobile {
+    display: none;
+  }
+  body main section article .articleDiv #wrapperIcons #wrapperIconsRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 20%;
+  }
+  body main section article .articleDiv #wrapperIcons #wrapperIconsRight div {
+    border: 1px solid black;
+    padding: 0 20px;
+    background-color: #EFEFEF;
+    margin-right: 4.5px;
+  }
+  body main section #showMore {
+    padding: 10px 0;
+  }
+  /********************************************************
+*********** SMALL SCREEN DE 962PX A 1200PX **************
+********************************************************/
+  body main #welcome p {
+    width: 50%;
+    float: left;
+    text-align: right;
+    padding-right: 20px;
+    margin-top: 15px;
+  }
+  body main #welcome img {
+    width: 15px;
+    height: 15px;
+    padding-right: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: right;
+  }
+  body main #welcome div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: left;
+    clear: right;
+    width: 40%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+            align-items: inherit;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+    margin-top: -12px;
+  }
+  body main #welcome div button {
+    background: none;
+    margin-left: 5px;
+    font: inherit;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    background-color: #DA552F;
+    color: white;
+    font-weight: 8px;
+    border-radius: 3px;
+    margin-right: 10px;
+  }
+  body main section #chat {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/********************************************************
+***************** LARGE SCREEN +1201PX ******************
+********************************************************/
+@media screen and (min-width: 1201px) {
+  /********************************************************
+*********** SMALL SCREEN DE 452PX A 961 PX **************
+********************************************************/
+  body {
+    background-color: #F9F9F9;
+  }
+  body main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main #welcome {
+    display: inline-block;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 90%;
+    background-color: white;
+    margin: 15px 0;
+    border: solid 1px #F9F9F9;
+  }
+  body main #welcome p {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 85%;
+    float: left;
+    margin-left: 10px;
+    font-size: 12px;
+    text-align: center;
+  }
+  body main #welcome p span {
+    font-weight: bold;
+  }
+  body main #welcome img {
+    width: 15px;
+    height: 15px;
+    padding-right: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: right;
+  }
+  body main #welcome div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    clear: both;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+            align-items: inherit;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+  }
+  body main #welcome div button {
+    background: none;
+    margin-left: 5px;
+    font: inherit;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    background-color: #DA552F;
+    color: white;
+    font-weight: 8px;
+    border-radius: 3px;
+  }
+  body main section {
+    width: 90%;
+    margin: 15px 0;
+  }
+  body main section article .articleDiv #wrapperIcons {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body main section article .articleDiv #wrapperIcons #wrapperIconsLeft #inTech {
+    display: inline;
+    border: none;
+  }
+  body main section article .articleDiv #wrapperIcons #wrapperIconsLeft .onlyMobile {
+    display: none;
+  }
+  body main section article .articleDiv #wrapperIcons #wrapperIconsRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 20%;
+  }
+  body main section article .articleDiv #wrapperIcons #wrapperIconsRight div {
+    border: 1px solid black;
+    padding: 0 20px;
+    background-color: #EFEFEF;
+    margin-right: 4.5px;
+  }
+  body main section #showMore {
+    padding: 10px 0;
+  }
+  /********************************************************
+*********** SMALL SCREEN DE 962PX A 1200PX **************
+********************************************************/
+  body main #welcome p {
+    width: 50%;
+    float: left;
+    text-align: right;
+    padding-right: 20px;
+    margin-top: 15px;
+  }
+  body main #welcome img {
+    width: 15px;
+    height: 15px;
+    padding-right: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: right;
+  }
+  body main #welcome div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: left;
+    clear: right;
+    width: 40%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+            align-items: inherit;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+    margin-top: -12px;
+  }
+  body main #welcome div button {
+    background: none;
+    margin-left: 5px;
+    font: inherit;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    background-color: #DA552F;
+    color: white;
+    font-weight: 8px;
+    border-radius: 3px;
+    margin-right: 10px;
+  }
+  body main section #chat {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /********************************************************
+***************** LARGE SCREEN +1201PX ******************
+********************************************************/
+  body main {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2.5% 3fr 1fr 2.5%;
+        grid-template-columns: 2.5% 3fr 1fr 2.5%;
+    -ms-grid-rows: 1fr, 1fr, 1fr, 5fr, 5fr;
+        grid-template-rows: 1fr, 1fr, 1fr, 5fr, 5fr;
+  }
+  body main header {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 6;
+  }
+  body main nav {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 6;
+  }
+  body main #welcome {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 4;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main #welcome p {
+    font-size: 17px;
+  }
+  body main #section1 {
+    -ms-grid-row: 4;
+    grid-row: 4;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  body main #section2 {
+    -ms-grid-row: 5;
+    grid-row: 5;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  body main .asides {
+    display: inline-block;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    grid-row-end: 6;
+    -ms-grid-column: 3;
+        grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  body main .asides #aside1 {
+    background-color: white;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 2.5% 2.5% 7.5% 7.5%;
+  }
+  body main .asides #aside1 div h2 {
+    font-size: 20px;
+    font-weight: 100;
+    float: left;
+  }
+  body main .asides #aside1 div img {
+    width: 15px;
+    height: 15px;
+    padding-right: 15px;
+    float: right;
+    padding-top: 15px;
+  }
+  body main .asides #aside1 p {
+    clear: both;
+    margin-top: 0px;
+  }
+  body main .asides #aside1 button {
+    margin-left: 5px;
+    font: inherit;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    background-color: #DA552F;
+    color: white;
+    font-weight: 8px;
+    border-radius: 3px;
+    margin-right: 10px;
+    width: 80%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  body main .asides #aside2 {
+    background-color: white;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    padding: 2.5% 2.5% 7.5% 7.5%;
+  }
+  body main .asides #aside2 h2 {
+    font-size: 17.5px;
+    font-weight: 100;
+    padding-bottom: 20px;
+    border-bottom: 1px solid silver;
+    display: block;
+  }
+  body main .asides #aside2 .person {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 25px;
+  }
+  body main .asides #aside2 .person img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  body main .asides #aside2 .person h4 {
+    margin: 0;
+  }
+  body main .asides #aside2 .person p {
+    margin: 2px 0;
+    color: gray;
+  }
+  body main .asides #aside2 .person #button {
+    border: 1px solid black;
+    padding: 0 5px;
+    border-radius: 3px;
+  }
+  body main .asides #aside3 {
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 2.5% 2.5% 7.5% 7.5%;
+    padding-top: 16.6px;
+  }
+  body main .asides #aside3 span {
+    display: ruby-text;
+    font-size: 12px;
+    color: silver;
+    padding-top: 16.6px;
+  }
+  body main .asides #aside3 span h2 {
+    font-size: 20px;
+    font-weight: 100;
+    margin-right: 12.5px;
+    color: black;
+  }
+  body main .asides #aside3 a {
+    display: block;
+    margin-top: -12px;
+  }
+  body main .asides #aside3 img {
+    height: 250px;
+    width: 250px;
+    padding-top: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
